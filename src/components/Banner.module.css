@@ -1,0 +1,30 @@
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+}
+
+.textContainer {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+
+.textContainer h1 {
+  font-size: 7rem;
+  color: #696969;
+}
+
+.textContainer p {
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #696969;
+}
+
+.textContainer span {
+  color: #30c0e4;
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: 50px;
+  background-color: #999;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.container p {
+  line-height: 50px;
+}
+.container:hover {
+  background-color: #888;
+}
