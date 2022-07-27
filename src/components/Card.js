@@ -40,10 +40,13 @@ class Card extends Component {
       <div className={styles.container}>
         <img src={image} alt={name} />
         <h3>{name}</h3>
-        <p>{price}$</p>
+        <p>
+          {price}
+          {count ? `  * ${count} = ${count * price}` : null}$
+        </p>
         <div className={styles.counter}>
           <img
-            className={this.state.count ? '' : styles.deactive}
+            className={this.state.count || styles.deactive}
             src={down}
             alt='down flash arrow'
             onClick={this.handleDown}
