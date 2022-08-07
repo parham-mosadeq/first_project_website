@@ -1,0 +1,23 @@
+.header {
+  min-height: 100vh;
+}
+
+.links {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.links h3 {
+  padding-bottom: 2rem;
+}
+
+.links h3 a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #aaaaaadb;
+}
+
+.links h3 a:hover {
+ 
+  color: #aaaaaa;
+}

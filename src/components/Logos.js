@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Logos.module.css';
+import styles from './Css Components/Logos.module.css';
 
 import sum from '../images/samsung.png';
 import apple from '../images/apple.png';

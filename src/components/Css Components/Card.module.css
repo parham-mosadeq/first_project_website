@@ -4,6 +4,8 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 15px rgb(189, 189, 189);
+  max-width: 300px;
+  position: relative;
 }
 
 .container img {
@@ -53,3 +55,25 @@
 .deactive {
   opacity: 0.3;
 }
+
+article {
+  display: inline-block;
+  position: absolute;
+  bottom: -42.5rem;
+  left: 30px;
+  background-color: #696969;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+article a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+article:hover {
+  background-color: #696969cd;
+}
+

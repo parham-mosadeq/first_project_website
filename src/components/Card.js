@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import styles from './Card.module.css';
+import styles from './Css Components/Card.module.css';
 
 import down from '../images/down.svg';
 import up from '../images/up.svg';
+import { Link } from 'react-router-dom';
 
 class Card extends Component {
   constructor() {
@@ -35,11 +36,13 @@ class Card extends Component {
 
   render() {
     const { count } = this.state;
-    const { image, name, price } = this.props;
+    const { title, image, price, id } = this.props;
     return (
       <div className={styles.container}>
-        <img src={image} alt={name} />
-        <h3>{name}</h3>
+        <img src={image} alt={title} />
+        <h3>
+          <Link to={`/product/${id}`}>{title}</Link>
+        </h3>
         <p>
           {price}
           {count ? `  * ${count} = ${count * price}` : null}$
